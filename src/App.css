@@ -13,11 +13,15 @@
 }
 
 .App-header {
-  background-color: #222;
-  background-image: url("logo.svg");
-  height: 300px;
-  padding: 20px;
+  background-color: black;
+  background-image: url("bg-main.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 600px;
+  padding: 0px;
   color: white;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .App-intro {
@@ -26,7 +30,7 @@
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  to { transform: rotate(-360deg); }
 }
 
 /* Links states */
