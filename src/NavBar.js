@@ -4,15 +4,17 @@
 // Component class for the nav links in the homepage
 var React = require('react');
 
-var NavBar = React.createClass({
+let NavBar = React.createClass({
     render: function () {
         var pages = ['Membership', 'Calendar', 'About'];
-        var navLinks = pages.map(function(page){
-            return (
-                <a href={'#' + page}>
-                {page}
-                </a>
-            );
+        var navLinks = pages.map(
+            function (page) {
+                return (
+                    <a className="Navigation"
+                       href={'#' + page}>
+                        {page}
+                    </a>
+                );
         });
 
         return <nav>{navLinks}</nav>;

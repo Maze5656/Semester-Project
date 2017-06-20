@@ -1,17 +1,23 @@
+/* Nav Bar component */
 .Navigation {
     padding: 15px 15px 15px 15px;
     margin: auto;
+    word-spacing: 20px;
+    font-family: "Times New Roman", Times, serif;
 }
 
+/* Initial/Homepage Greeting */
 .App {
   text-align: center;
 }
 
+/* Animated React Logo */
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
+/* Hero Image / background image */
 .App-header {
   background-color: black;
   background-image: url("bg-main.jpg");
@@ -22,6 +28,7 @@
   color: white;
     margin-left: 50px;
     margin-right: 50px;
+    flex: 1;
 }
 
 .App-intro {

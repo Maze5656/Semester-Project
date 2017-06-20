@@ -1,6 +1,9 @@
 /**
  * Created by Josh on 6/19/2017.
  */
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
 class Clock extends React.Component{
     constructor(props){
         super(props);
