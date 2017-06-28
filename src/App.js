@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NavBar from './NavBar'
+import Events from './Events'
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
                 </h1>
               <NavBar />
             <div className="App-header">
+                <Events />
             </div>
             <p className="App-intro">
               <em>Under-Construction</em>

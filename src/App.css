@@ -6,6 +6,12 @@
     font-family: "Times New Roman", Times, serif;
 }
 
+
+/* Event Window */
+.Events {
+    text-align: left;
+}
+
 /* Initial/Homepage Greeting */
 .App {
   text-align: center;
