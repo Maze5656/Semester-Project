@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fd59e3c-6e41-46de-8790-770830d04a06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.css" afterPath="$PROJECT_DIR$/src/App.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Events.js" afterPath="$PROJECT_DIR$/src/Events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NavBar.js" afterPath="$PROJECT_DIR$/src/NavBar.js" />
-    </list>
+    <list default="true" id="5fd59e3c-6e41-46de-8790-770830d04a06" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -278,16 +272,15 @@
       <workItem from="1498659005818" duration="2297000" />
       <workItem from="1498663283151" duration="8687000" />
       <workItem from="1498737982090" duration="9930000" />
-      <workItem from="1498834128241" duration="181000" />
+      <workItem from="1498834128241" duration="447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33736000" />
+    <option name="totallyTimeSpent" value="34002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="190" y="28" width="1296" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.196875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
