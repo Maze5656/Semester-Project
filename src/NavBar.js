@@ -6,7 +6,7 @@ var React = require('react');
 
 let NavBar = React.createClass({
     render: function () {
-        var pages = ['Membership', 'Calendar', 'About'];
+        var pages = ['Membership', 'Events', 'About'];
         var navLinks = pages.map(
             function (page) {
                 return (

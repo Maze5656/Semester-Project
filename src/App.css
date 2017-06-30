@@ -6,15 +6,67 @@
     font-family: "Times New Roman", Times, serif;
 }
 
-
-/* Event Window */
+/* Event Component */
 .Events {
     text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.Events h1 {
+    text-align: center;
+    position: static;
+    padding-top: 100px;
+    padding-left: 15px;
+}
+
+/* Event boxes */
+.Event {
+    width: 300px;
+    margin: 2em 1em;
+    box-shadow: 0 0 0 3px white;
+    position: static;
+    float: left;
+}
+
+.Event:hover {
+    border: 3px dashed firebrick;
+    box-shadow: none;
+}
+
+.Event figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+}
+
+.Event figure img {
+    display: inline-flex;
+    float: left;
+    width: 150px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.Event figure figcaption {
+    float: right;
+    position: static;
+    bottom: .5em;
+    margin: auto;
 }
 
 /* Initial/Homepage Greeting */
 .App {
   text-align: center;
+}
+
+/* Record and Tape Image Logo */
+.shopLogo {
+    float: left;
+    margin: 1em 5em;
+    display: flex;
+    position: absolute;
 }
 
 /* Animated React Logo */
@@ -25,13 +77,13 @@
 
 /* Hero Image / background image */
 .App-header {
-  background-color: black;
-  background-image: url("bg-main.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  height: 600px;
-  padding: 0px;
-  color: white;
+    background-color: black;
+    background-image: url("bg-main.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 600px;
+    padding: 0px;
+    color: white;
     margin-left: 50px;
     margin-right: 50px;
     flex: 1;
