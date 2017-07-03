@@ -14,14 +14,12 @@ let Events = React.createClass({
                 <div className="Event">
                     <figure>
                         <img src={event.photoUrl} alt="img2" />
-                        <figcaption>
-                            <ul>
-                                {event.title}
-                                <li>Date: {event.date}</li>
-                                <li>Time: {event.time}</li>
-                                <li>{event.description}</li>
-                            </ul>
-                        </figcaption>
+                        <ul>
+                            <li>{event.title}</li>
+                            <li>Date: {event.date}</li>
+                            <li>Time: {event.time}</li>
+                            <li>{event.description}</li>
+                        </ul>
                     </figure>
                 </div>
             );
@@ -29,7 +27,7 @@ let Events = React.createClass({
 
         function Lister(props) {
             let eventsList = {
-                "events": [{
+                "items": [{
                     "id": "1",
                     "title": "Face-Melter",
                     "photoUrl": img2,
@@ -55,7 +53,7 @@ let Events = React.createClass({
                 ]
             };
 
-            const mappedArray = eventsList.events.map(event => < EventItem event={event}/>);
+            const mappedArray = eventsList.items.map(event => < EventItem event={event}/>);
 
             return (
                 <div>

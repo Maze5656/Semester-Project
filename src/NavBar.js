@@ -2,23 +2,43 @@
  * Created by Josh on 6/18/2017.
  */
 // Component class for the nav links in the homepage
+import {
+    BrowserRouter,
+    Route,
+    Link
+} from 'react-router-dom';
+import { HomePage, img1 } from './Home';
+import { Events, img2, img3, img4 } from './Events'
+import Home from './Hello';
 var React = require('react');
 
 let NavBar = React.createClass({
     render: function () {
-        var pages = ['Membership', 'Events', 'About'];
-        var navLinks = pages.map(
-            function (page) {
+            function Navi () {
                 return (
-                    <a className="Navigation"
-                       href={'#' + page}>
-                        {page}
-                    </a>
-                );
-        });
+                    <BrowserRouter>
+                        <div className="Navigation">
+                            <ul>
+                                <li>
+                                    <Link to="/">Home</Link>
+                                </li>
+                                <li>
+                                    <Link to="/Events">Events</Link>
+                                </li>
+                                <li>
+                                    <Link to="/About">About</Link>
+                                </li>
+                            </ul>
 
-        return <nav>{navLinks}</nav>;
+                            <Route path="/" exact component={HomePage} />
+                            <Route path="/Events" exact component={Events} />
+                            <Route path="/About" exact component={Home} />
+                        </div>
+                    </BrowserRouter>
+                );
+        }
+        return <Navi />;
     }
 });
 
-module.exports = NavBar; // This line sets what you get when you import this component module
+export default NavBar; // This line sets what you get when you import this component module

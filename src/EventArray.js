@@ -4,7 +4,7 @@
 function Lister(props)
 {
     let events = {
-        "events": [{
+        "items": [{
             "id": "1",
             "title": "Event 1",
             "date": "7/11/2018",
