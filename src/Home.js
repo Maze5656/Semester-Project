@@ -13,7 +13,7 @@ let HomePage = React.createClass({
             return (
                 <div>
                     <figure>
-                        <img src={item.photoUrl} alt="img1" />
+                        <img src={item.photoUrl} alt="img1"/>
                     </figure>
                 </div>
             );
@@ -49,16 +49,48 @@ let HomePage = React.createClass({
                             <li>POP CULTURE /</li>
                             <li>CLOTHING</li>
                         </ul>
+                        <div className="SubMenu">
+                            <ul>
+                                <li>BUY ~</li>
+                                <li>SELL ~</li>
+                                <li>TRADE</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="LocationBox">
+                        <div className="Location">
+                            <ul>
+                                <li>TOWSON, MD</li>
+                                <li>DULANEY VALLEY</li>
+                                <li>SHOPPING CENTER</li>
+                            </ul>
+                        </div>
+                        <div className="ShopSchedule">
+                            <ul>
+                                <li>6239 South Blvd.</li>
+                                <li>Corner of Archdale/South Blvd.</li>
+                            </ul>
+                            <ul>
+                                <li>Hours of Operation:</li>
+                                <li>Mon-Sat 10AM-9PM</li>
+                                <li>Sun 12PM-6PM</li>
+                            </ul>
+                            <ul className="Location">
+                                <li>704.552.8448</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div className="HomeImages">
-                        <h2>Welcome</h2>
                         {imageArray}
                     </div>
                 </div>
             )
         }
-        return <div><Lister /></div>
-    }});
 
-export { HomePage, img1, img2, img3 };
+        return <div><Lister /></div>
+    }
+});
+
+export {HomePage, img1, img2, img3};

@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom';
 import { HomePage, img1 } from './Home';
 import { Events, img2, img3, img4 } from './Events'
-import Home from './Hello';
+import { About }from './About';
 var React = require('react');
 
 let NavBar = React.createClass({
@@ -32,7 +32,7 @@ let NavBar = React.createClass({
 
                             <Route path="/" exact component={HomePage} />
                             <Route path="/Events" exact component={Events} />
-                            <Route path="/About" exact component={Home} />
+                            <Route path="/About" exact component={About} />
                         </div>
                     </BrowserRouter>
                 );
