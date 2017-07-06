@@ -7,8 +7,8 @@ import {
     Route,
     Link
 } from 'react-router-dom';
-import { HomePage, img1 } from './Home';
-import { Events, img2, img3, img4 } from './Events'
+import { HomePage } from './Home';
+import { Events } from './Events'
 import { About }from './About';
 var React = require('react');
 
@@ -20,13 +20,13 @@ let NavBar = React.createClass({
                         <div className="Navigation">
                             <ul>
                                 <li>
-                                    <Link to="/">Home</Link>
+                                    <Link to="/">-Home-</Link>
                                 </li>
                                 <li>
-                                    <Link to="/Events">Events</Link>
+                                    <Link to="/Events">-Events-</Link>
                                 </li>
                                 <li>
-                                    <Link to="/About">About</Link>
+                                    <Link to="/About">-About-</Link>
                                 </li>
                             </ul>
 

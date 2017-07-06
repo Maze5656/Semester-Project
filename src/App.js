@@ -3,7 +3,6 @@ import './App.css';
 import NavBar from './NavBar'
 import logo1 from './logo.png';
 
-
 class App extends Component {
   render() {
     return (

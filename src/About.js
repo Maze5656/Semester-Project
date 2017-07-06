@@ -1,9 +1,9 @@
 /**
  * Created by Josh on 7/3/2017.
  */
-import img2 from './img2.jpg';
-import img3 from './img3.jpg';
-import img4 from './img4.jpg';
+import img6 from './img6.jpg';
+import img7 from './img7.jpg';
+import img8 from './img8.jpg';
 let React = require('react');
 
 let About = React.createClass({
@@ -13,12 +13,10 @@ let About = React.createClass({
             return (
                 <div className="Event">
                     <figure>
-                        <img src={event.photoUrl} alt="img2" />
+                        <img src={event.photoUrl} alt="A founding member" />
                         <ul>
-                            <li>{event.title}</li>
-                            <li>Date: {event.date}</li>
-                            <li>Time: {event.time}</li>
-                            <li>{event.description}</li>
+                            <li>{event.name}</li>
+                            <li>"<em>{event.quote}"</em></li>
                         </ul>
                     </figure>
                 </div>
@@ -29,27 +27,21 @@ let About = React.createClass({
             let eventsList = {
                 "items": [{
                     "id": "1",
-                    "title": "Face-Melter",
-                    "photoUrl": img2,
-                    "date": "7/11/2018",
-                    "time": "1:00PM",
-                    "description": "A face-melting event with guitars."
+                    "name": "Simon Pegg",
+                    "photoUrl": img6,
+                    "quote": "You've got red on you."
                 },
                     {
                         "id": "2",
-                        "title": "The Pick of Destiny",
-                        "photoUrl": img3,
-                        "date": "8/08/2021",
-                        "time": "9:00AM",
-                        "description": "Featuring a Tribute to the greatest song ever made."
+                        "name": "Weird Al Yankovic",
+                        "photoUrl": img7,
+                        "quote": "When was the last time you were completely de-loused?"
                     },
                     {
                         "id": "3",
-                        "title": "Future Past Event",
-                        "photoUrl": img4,
-                        "date": "12/03/97",
-                        "time": "4:00PM",
-                        "description": "Scheduled for 1997!"}
+                        "name": "Uncle Phil",
+                        "photoUrl": img8,
+                        "quote": "Pillowy mounds of mashed potatoes"}
                 ]
             };
 
@@ -58,13 +50,18 @@ let About = React.createClass({
             return (
                 <div>
                     <div className="Events">
-                        <h1>Upcoming Events</h1>
+                        <p className="About">
+                            We are dedicated to bringing albums and
+                            merchandise to music lovers from all walks of life.
+                        </p>
+                        <h1>Our Founding Members</h1>
                         {mappedArray}
                     </div>
                 </div>
             )
         }
         return <div><Lister /></div>
-    }});
+    }
+});
 
-export { About, img2, img3, img4 };
+export { About };

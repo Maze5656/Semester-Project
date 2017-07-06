@@ -93,4 +93,4 @@ let HomePage = React.createClass({
     }
 });
 
-export {HomePage, img1, img2, img3};
+export { HomePage };
