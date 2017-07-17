@@ -22,7 +22,7 @@ class App extends Component {
 
     componentDidMount() {
         Request
-            .get('api.openweathermap.org/data/2.5/weather?zip=21157,us&APPID=${process.env.REACT_APP_WEATHER_API_KEY}')
+            .get(`http://api.openweathermap.org/data/2.5/weather?zip=21157,us&APPID=${process.env.REACT_APP_WEATHER_API_KEY}`)
             .end((err, res) => {
             if(err){
                 console.error(err);
