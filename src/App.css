@@ -105,7 +105,6 @@
 /* Event Component */
 .Events {
     text-align: left;
-
 }
 
 .Events h1 {
@@ -184,12 +183,6 @@
     position: absolute;
 }
 
-/* Animated React Logo */
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 /* Hero Image / background image */
 .App-header {
     background-color: black;
@@ -202,17 +195,11 @@
     margin-left: 50px;
     margin-right: 50px;
     flex: 1;
-
 }
 
 .App-intro {
     font-size: large;
     margin: auto;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(-360deg); }
 }
 
 /* Links states */
