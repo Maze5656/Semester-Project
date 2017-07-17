@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './NavBar'
 import logo1 from './logo.png';
 import Request from 'superagent';
-import TemperatureConverter from 'cis137-components';
+import {TemperatureConverter} from 'cis137-components';
 
 class App extends Component {
 
@@ -31,9 +31,10 @@ class App extends Component {
 
             console.log(res);
             this.setState({
-                temper: res.body.main.temp
+                temper: res.body.main.temp.toString()
+
             });
-        })
+            })
     }
 
     componentWillReceiveProps(nextProps) {
@@ -48,9 +49,11 @@ class App extends Component {
 
     }
 
+
+
   render() {
 
-    return (
+      return (
         <div className="Wrapper">
           <div className="App">
               <img className="shopLogo" src={logo1} />
@@ -64,9 +67,10 @@ class App extends Component {
               <em>Under-Construction</em>
             </p>
           </div>
-            <p>
-                {this.state.temper}
-            </p>
+            <p><strong>The current temperature in your area:</strong></p>
+            <div>
+                <TemperatureConverter kelvin={this.state.temper} toUnit="f" />
+            </div>
         </div>
     );
   }
