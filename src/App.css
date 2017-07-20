@@ -197,9 +197,12 @@
     flex: 1;
 }
 
-.App-intro {
+.Temperature {
     font-size: large;
     margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Links states */

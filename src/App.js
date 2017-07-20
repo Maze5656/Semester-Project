@@ -11,8 +11,25 @@ class App extends Component {
     {
         super();
         this.state = {
-            temper: ""
+            temper: "",
         };
+    }
+
+    tick() {
+        Request
+            .get(`http://api.openweathermap.org/data/2.5/weather?zip=21157,us&APPID=${process.env.REACT_APP_WEATHER_API_KEY}`)
+            .end((err, res) => {
+                if(err){
+                    console.error(err);
+                    return;
+                }
+
+                console.log(res);
+                this.setState({
+                    temper: res.body.main.temp.toString()
+                });
+            })
+
     }
 
     componentWillMount() {
@@ -21,6 +38,10 @@ class App extends Component {
 
 
     componentDidMount() {
+        this.timerID = setInterval(
+            () => this.tick(),
+            60000
+        );
         Request
             .get(`http://api.openweathermap.org/data/2.5/weather?zip=21157,us&APPID=${process.env.REACT_APP_WEATHER_API_KEY}`)
             .end((err, res) => {
@@ -32,7 +53,6 @@ class App extends Component {
             console.log(res);
             this.setState({
                 temper: res.body.main.temp.toString()
-
             });
             })
     }
@@ -46,10 +66,8 @@ class App extends Component {
     }
 
     componentWillUnmount() {
-
+        clearInterval(this.timerID);
     }
-
-
 
   render() {
 
@@ -63,14 +81,11 @@ class App extends Component {
                     <NavBar />
                 </div>
             </div>
-            <p className="App-intro">
-              <em>Under-Construction</em>
-            </p>
-          </div>
-            <p><strong>The current temperature in your area:</strong></p>
-            <div>
-                <TemperatureConverter kelvin={this.state.temper} toUnit="f" />
+            <div className="Temperature">
+                <em>The current temperature in your area:</em>
+                <strong><TemperatureConverter kelvin={this.state.temper} toUnit="f" /></strong>
             </div>
+          </div>
         </div>
     );
   }
