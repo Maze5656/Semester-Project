@@ -42,19 +42,7 @@ class App extends Component {
             () => this.tick(),
             60000
         );
-        Request
-            .get(`http://api.openweathermap.org/data/2.5/weather?zip=21157,us&APPID=${process.env.REACT_APP_WEATHER_API_KEY}`)
-            .end((err, res) => {
-            if(err){
-                console.error(err);
-                return;
-            }
-
-            console.log(res);
-            this.setState({
-                temper: res.body.main.temp.toString()
-            });
-            })
+        this.tick()
     }
 
     componentWillReceiveProps(nextProps) {
@@ -74,7 +62,7 @@ class App extends Component {
       return (
         <div className="Wrapper">
           <div className="App">
-              <img className="shopLogo" src={logo1} />
+              <img className="shopLogo" src={logo1} alt="R&TT Logo" />
                 <h1/>
             <div className="App-header">
                 <div className="Navigation">
