@@ -57,7 +57,7 @@
 /* Home images */
 .HomeImages {
     margin: auto;
-    padding: 25px 0 0 0px;
+    padding: 25px 25px;
     display: flex;
     flex-direction: row;
     height: 100%;

@@ -38,7 +38,14 @@ class Thermometer extends Component {
     }
 
     render() {
-        return <strong><TemperatureConverter kelvin={this.state.temper} toUnit="f"/></strong>
+        return (
+            <div className="box">
+                <div className="Temperature">
+                    <em>The current temperature in your area:</em>
+                    <strong><TemperatureConverter kelvin={this.state.temper} toUnit="f"/></strong>
+                </div>
+            </div>
+    )
     }
 };
 
