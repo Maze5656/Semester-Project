@@ -7,7 +7,7 @@
 
 /* Nav Bar component with react-router*/
 .Navigation {
-    padding: 0 15px 15px 15px;
+    padding: 30px 15px 15px 15px;
     margin: auto;
     font-family: "Times New Roman", Times, serif;
 }
@@ -65,7 +65,7 @@
 
 /* Location and Time slots */
 .LocationBox {
-    margin: 20px 0 0 -30px;
+    margin: 20px 0 0 30px;
     min-height: 150px;
     float: left;
 }
@@ -209,20 +209,16 @@
 a:link {
     color: darkslategray;
     text-decoration: none;
-    background-color: powderblue;
 }
 a:visited {
     color: green;
     text-decoration: none;
-    background-color: cyan;
 }
 a:hover {
     color:hotpink;
     text-decoration: underline;
-    background-color: lightgreen;
 }
 a:active {
     color: blue;
     text-decoration: underline;
-    background-color: hotpink;
 }

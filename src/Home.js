@@ -12,7 +12,7 @@ let HomePage = React.createClass({
             const item = props.image;
             return (
                 <div>
-                    <figure>
+                    <figure className="HomeImages">
                         <img src={item.photoUrl} alt="img1"/>
                     </figure>
                 </div>
@@ -81,11 +81,8 @@ let HomePage = React.createClass({
                             </ul>
                         </div>
                     </div>
-
-
                             <div className="HomeImages">
                                 {imageArray}
-
                     </div>
                 </div>
             )

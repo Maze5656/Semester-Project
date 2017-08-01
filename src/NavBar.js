@@ -10,6 +10,7 @@ import {
 import { HomePage } from './Home';
 import { Events } from './Events'
 import { About }from './About';
+import Bonus from './Bonus';
 var React = require('react');
 
 let NavBar = React.createClass({
@@ -22,13 +23,16 @@ let NavBar = React.createClass({
                                 <div className="column is-half nav-center notification is-white">
                                     <ul>
                                         <li>
-                                            <Link to="/">-Home-</Link>
+                                            <a className="button is-info"><Link to="/">-HOME-</Link></a>
                                         </li>
                                         <li>
-                                            <Link to="/Events">-Events-</Link>
+                                            <a className="button is-info"><Link to="/Events">-EVENTS-</Link></a>
                                         </li>
                                         <li>
-                                            <Link to="/About">-About-</Link>
+                                            <a className="button is-info"><Link to="/About">-ABOUT-</Link></a>
+                                        </li>
+                                        <li>
+                                            <a className="button is-primary"><Link to="/Bonus">-BONUS-</Link></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -37,6 +41,7 @@ let NavBar = React.createClass({
                             <Route path="/" exact component={HomePage}/>
                             <Route path="/Events" exact component={Events}/>
                             <Route path="/About" exact component={About}/>
+                            <Route path="/Bonus" exact component={Bonus}/>
                         </div>
                     </BrowserRouter>
                 );
