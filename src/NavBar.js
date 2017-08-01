@@ -18,21 +18,25 @@ let NavBar = React.createClass({
                 return (
                     <BrowserRouter>
                         <div className="Navigation">
-                            <ul>
-                                <li>
-                                    <Link to="/">-Home-</Link>
-                                </li>
-                                <li>
-                                    <Link to="/Events">-Events-</Link>
-                                </li>
-                                <li>
-                                    <Link to="/About">-About-</Link>
-                                </li>
-                            </ul>
+                            <div className="columns">
+                                <div className="column is-half nav-center notification is-white">
+                                    <ul>
+                                        <li>
+                                            <Link to="/">-Home-</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/Events">-Events-</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/About">-About-</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
-                            <Route path="/" exact component={HomePage} />
-                            <Route path="/Events" exact component={Events} />
-                            <Route path="/About" exact component={About} />
+                            <Route path="/" exact component={HomePage}/>
+                            <Route path="/Events" exact component={Events}/>
+                            <Route path="/About" exact component={About}/>
                         </div>
                     </BrowserRouter>
                 );
