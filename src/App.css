@@ -197,6 +197,11 @@
     flex: 1;
 }
 
+.Bonus-header {
+    background-color: black;
+    height: 1200px;
+}
+
 .Temperature {
     font-size: large;
     margin: auto;

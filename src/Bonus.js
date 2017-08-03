@@ -12,8 +12,8 @@ class Bonus extends Component {
                 <br/>
                 <section className="hero is-primary is-bold">
                     <div className="hero-body">
-                        <div className="container">
-                            <h1 className="title">BONUS</h1>
+                        <div className="container content has-text-left">
+                            <h1 className="title has-text-left">BONUS</h1>
                             <h2 className="subtitle">Bonus content for your enjoyment!</h2>
                         </div>
                     </div>
