@@ -12,15 +12,19 @@ let Events = React.createClass({
             const event = props.event;
             return (
                 <div className="Event">
-                    <figure>
-                        <img src={event.photoUrl} alt="img2" />
-                        <ul>
-                            <li>{event.name}</li>
-                            <li>Date: {event.date}</li>
-                            <li>Time: {event.time}</li>
-                            <li>{event.description}</li>
-                        </ul>
-                    </figure>
+                    <div className="columns">
+                        <div className="column notification is-black is-centered">
+                            <figure>
+                                <img src={event.photoUrl} alt="img2"/>
+                                <ul>
+                                    <li>{event.name}</li>
+                                    <li>Date: {event.date}</li>
+                                    <li>Time: {event.time}</li>
+                                    <li>{event.description}</li>
+                                </ul>
+                            </figure>
+                        </div>
+                    </div>
                 </div>
             );
         }

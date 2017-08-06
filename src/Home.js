@@ -13,7 +13,11 @@ let HomePage = React.createClass({
             return (
                 <div>
                     <figure className="HomeImages">
+                        <div className="columns">
+                            <div className="column notification is-black is-centered is-hidden-mobile">
                         <img src={item.photoUrl} alt="img1"/>
+                            </div>
+                        </div>
                     </figure>
                 </div>
             );
@@ -58,7 +62,9 @@ let HomePage = React.createClass({
                         </div>
                     </div>
 
-                    <div className="LocationBox">
+
+                    <div className="container is-fluid LocationBox">
+                        <div className="box">
                         <div className="Location">
                             <ul>
                                 <li>TOWSON, MD</li>
@@ -80,6 +86,7 @@ let HomePage = React.createClass({
                                 <li>704.552.8448</li>
                             </ul>
                         </div>
+                    </div>
                     </div>
                             <div className="HomeImages">
                                 {imageArray}

@@ -8,10 +8,9 @@ class App extends Component {
 
   render() {
       return (
-        <div className="Wrapper">
+        <div>
           <div className="App">
-              <img className="shopLogo" src={logo1} alt="R&TT Logo" />
-                <h1/>
+              <img className="container is-fluid shopLogo" src={logo1} alt="R&TT Logo" />
             <div className="App-header">
                 <NavBar />
             </div>

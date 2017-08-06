@@ -123,6 +123,7 @@
     box-shadow: 0 0 0 3px white;
     position: static;
     float: left;
+    padding-bottom: 20px;
 }
 
 .Event li {
@@ -177,10 +178,7 @@
 
 /* Record and Tape Image Logo */
 .shopLogo {
-    float: left;
-    margin: 1em 5em;
-    display: flex;
-    position: absolute;
+    margin: 1em 1em;
 }
 
 /* Hero Image / background image */
@@ -194,6 +192,7 @@
     color: white;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
     flex: 1;
 }
 
