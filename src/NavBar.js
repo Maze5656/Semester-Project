@@ -14,7 +14,7 @@ import { About }from './About';
 import Bonus from './Bonus';
 var React = require('react');
 
-ReactGA.initialize('UA-104082255-1')
+ReactGA.initialize('UA-104082255-1');
 
 function Analytics(props){
     ReactGA.set({ page: props.location.pathname + props.location.search });
